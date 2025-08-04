@@ -1,1 +1,112 @@
-hello this is my new website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kaopun - Architecture Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h2 {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .project p {
+            padding: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kaopun's Architecture Portfolio</h1>
+    </header>
+
+    <section class="portfolio">
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>Short description of your first project. What was the concept? Key features?</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+            <p>Short description of your second project. What was the concept? Key features?</p>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <h2>Project 3</h2>
+            <p>Short description of your third project. What was the concept? Key features?</p>
+        </div>
+        <div class="project">
+            <img src="project4.jpg" alt="Project 4">
+            <h2>Project 4</h2>
+            <p>Short description of your fourth project. What was the concept? Key features?</p>
+        </div>
+        <div class="project">
+            <img src="project5.jpg" alt="Project 5">
+            <h2>Project 5</h2>
+            <p>Short description of your fifth project. What was the concept? Key features?</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kaopun. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
